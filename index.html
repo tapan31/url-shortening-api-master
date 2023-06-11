@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Lora:wght@400;500&family=Poppins:wght@300;500;600&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Shortly URL shortening API Challenge</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <!-- Mobile Navbar -->
+      <h1 class="mobile-nav-heading nav-heading">Shortly</h1>
+      <i id="nav-btn" class="fa-solid fa-bars"></i>
+
+      <!--  -->
+      <!--  -->
+
+      <!-- Desktop Navbar -->
+      <div class="nav-left">
+        <h1 class="nav-heading">Shortly</h1>
+        <ul class="nav-links">
+          <li class="nav-item">Features</li>
+          <li class="nav-item">Pricing</li>
+          <li class="nav-item">Resources</li>
+        </ul>
+      </div>
+      <div class="nav-buttons">
+        <a class="login" href="">Login</a>
+        <a class="sign-up" href="">Sign Up</a>
+      </div>
+    </nav>
+
+    <div class="mobile-wrapper">
+      <div id="mobile-nav" class="container mobile-nav-container">
+        <div class="top">
+          <ul class="nav-links">
+            <li class="nav-item">Features</li>
+            <li class="nav-item">Pricing</li>
+            <li class="nav-item">Resources</li>
+          </ul>
+        </div>
+        <span class="nav-line"></span>
+        <div class="bottom">
+          <a class="login" href="">Login</a>
+          <a class="sign-up" href="">Sign Up</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="showcase container">
+      <div class="showcase-text">
+        <h1 class="showcase-heading">More than just shorter links</h1>
+        <p>
+          Build your brand's recognition and get detailed insights on how your
+          links are performing.
+        </p>
+        <button class="btn">Get Started</button>
+      </div>
+
+      <div class="showcase-img">
+        <img src="images/illustration-working.svg" alt="image" />
+      </div>
+    </section>
+
+    <div class="color-container">
+      <div class="form-container container">
+        <form id="input-form" class="input-container">
+          <input
+            class="input-link"
+            id="input-url"
+            type="text"
+            placeholder="Shorten a link here"
+          />
+          <button type="submit" id="submit-btn" class="btn-input">
+            Shorten it!
+          </button>
+        </form>
+        <span id="error-span" style="display: none">Please add a link</span>
+      </div>
+
+      <div class="parent-element container">
+        <!-- <div class="container link-container">
+          <div class="url">
+            <p>https://www.twitter.com</p>
+          </div>
+          <div class="shortened-url">
+            <p>http://localhoeidljd</p>
+            <button class="btn-copy">Copy</button>
+          </div>
+        </div>
+
+        <div class="container link-container">
+          <div class="url">
+            <p>https://www.twitter.com</p>
+          </div>
+          <div class="shortened-url">
+            <p>http://localhoeidljd</p>
+            <button class="btn-copied">Copied!</button>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="text-container container">
+        <h1>Advanced Statistics</h1>
+        <p>
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+
+      <div class="card-container container">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="img-container">
+              <img src="images//icon-brand-recognition.svg" alt="" />
+            </div>
+            <h3>Brand Recognition</h3>
+            <p>
+              Boost your brand recognition with each click. Generic links don't
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </div>
+          <span class="line1"></span>
+        </div>
+        <div id="card-2" class="card-wrapper">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/icon-detailed-records.svg" alt="" />
+            </div>
+            <h3>Detailed Records</h3>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </div>
+          <span class="line2"></span>
+        </div>
+        <div id="card-3" class="card-wrapper">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/icon-fully-customizable.svg" alt="" />
+            </div>
+            <h3>Fully Customizable</h3>
+            <p>
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="boost-container">
+      <h1>Boost your links today</h1>
+      <button class="btn btn-small">Get Started</button>
+    </div>
+
+    <div class="footer-container">
+      <footer class="container">
+        <h1>Shortly</h1>
+
+        <div class="features">
+          <h3>Features</h3>
+          <ul class="features-list">
+            <li>Link Shortening</li>
+            <li>Branded Links</li>
+            <li>Analytics</li>
+          </ul>
+        </div>
+
+        <div class="resources">
+          <h3>Resources</h3>
+          <ul class="resources-list">
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <div class="company">
+          <h3>Company</h3>
+          <ul class="company-list">
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -4,6 +4,8 @@
 
 This project is a web application that allows users to shorten URLs. It makes use of the Shortly API to generate shortened links for long URLs. The application provides features such as copying the shortened link, saving links to local storage, and rendering saved links on page load.
 
+### [Live Preview](https://tapan31.github.io/url-shortner/)
+
 ## Installation
 
 To run the project locally, follow these steps:

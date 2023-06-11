@@ -471,6 +471,10 @@ footer li:hover {
 
 /* Responsive */
 @media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .showcase {
     display: flex;
     flex-direction: column-reverse;
